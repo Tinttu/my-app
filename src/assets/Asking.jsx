@@ -156,8 +156,8 @@ function Asking() {
           Ag
           <input
             type="text"
-            name="Al"
-            value={symbols.Al}
+            name="Ag"
+            value={symbols.Ag}
             style={{ marginLeft: "10px" }}
             onChange={handleChange}
           />
