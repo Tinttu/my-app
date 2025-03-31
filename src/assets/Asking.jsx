@@ -12,12 +12,7 @@ function Asking() {
     Cu: '',
     Ag: '',
     Au: '',
-    Ni: '',
-    Zn: '',
-    Pb: '',
-    Cl: '',
-    Fe: '',
-    K: ''
+    Ni: ''
   });
 
   const correctSymbols = {
@@ -81,7 +76,8 @@ function Asking() {
             type="text"
             name="O"
             value={symbols.O}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -92,7 +88,8 @@ function Asking() {
             type="text"
             name="H"
             value={symbols.H}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -103,7 +100,8 @@ function Asking() {
             type="text"
             name="C"
             value={symbols.C}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -114,7 +112,8 @@ function Asking() {
             type="text"
             name="N"
             value={symbols.N}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -126,6 +125,7 @@ function Asking() {
             name="Ne"
             value={symbols.Ne}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -137,6 +137,7 @@ function Asking() {
             name="Al"
             value={symbols.Al}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -148,6 +149,7 @@ function Asking() {
             name="Cu"
             value={symbols.Cu}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -159,6 +161,7 @@ function Asking() {
             name="Ag"
             value={symbols.Ag}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -170,6 +173,7 @@ function Asking() {
             name="Au"
             value={symbols.Au}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -181,64 +185,12 @@ function Asking() {
             name="Ni"
             value={symbols.Ni}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
-        <label>
-          Zn
-          <input
-            type="text"
-            name="Zn"
-            value={symbols.Zn}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Pb
-          <input
-            type="text"
-            name="Pb"
-            value={symbols.Pb}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Cl
-          <input
-            type="text"
-            name="Cl"
-            value={symbols.Cl}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Fe
-          <input
-            type="text"
-            name="Fe"
-            value={symbols.Fe}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          K
-          <input
-            type="text"
-            name="K"
-            value={symbols.K}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
+        
         <br />
         
         <p>

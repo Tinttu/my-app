@@ -1,8 +1,11 @@
-.label {
-    margin-right: 10px;
-    margin-left: 10px;
+  input {
+    font-size: 20px; /* Määrittää tekstin koon */
+    padding-left: 40px; /* 20 pikseliä tyhjää sisältä vasemmalta */
+    width: 130px; /* Asettaa leveyden */
   }
-.input-field {
-    margin-left: 10px; /* Adjust as needed */
-    margin-right: 10px;
+  label {
+    font-size: 20px; /* Määrittää tekstin koon */
+    font-weight: bold; /* Teksti lihavoiduksi */
+    padding-left: 40px; /* 20 pikseliä tyhjää sisältä vasemmalta */
   }
+    
