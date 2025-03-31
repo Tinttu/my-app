@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
 import './Asking.css'
 
-function Asking() {
+function Asking2() {
   const [symbols, setSymbols] = useState({
     Br: '',
-    H: '',
-    C: '',
-    N: '',
-    Ne: '',
-    Al: '',
-    Cu: '',
-    Ag: '',
-    Au: '',
-    Ni: '',
     Zn: '',
     Pb: '',
     Cl: '',
@@ -21,16 +12,7 @@ function Asking() {
   });
 
   const correctSymbols = {
-    Br "bromi",
-    H: "vety",
-    C: "hiili",
-    N: "typpi",
-    Ne: "neon",
-    Al: "alumiini",
-    Cu: "kupari",
-    Ag: "hopea",
-    Au: "kulta",
-    Ni: "nikkeli",
+    Br: "bromi",
     Zn: "sinkki",
     Pb: "lyijy",
     Cl: "kloori",
@@ -86,105 +68,7 @@ function Asking() {
           />
         </label>
         <br />
-        <label>
-          H
-          <input
-            type="text"
-            name="H"
-            value={symbols.H}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          C
-          <input
-            type="text"
-            name="C"
-            value={symbols.C}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          N
-          <input
-            type="text"
-            name="N"
-            value={symbols.N}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Ne
-          <input
-            type="text"
-            name="Ne"
-            value={symbols.Ne}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Al
-          <input
-            type="text"
-            name="Al"
-            value={symbols.Al}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Cu
-          <input
-            type="text"
-            name="Cu"
-            value={symbols.Cu}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Ag
-          <input
-            type="text"
-            name="Al"
-            value={symbols.Al}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Au
-          <input
-            type="text"
-            name="Au"
-            value={symbols.Au}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Ni
-          <input
-            type="text"
-            name="Ni"
-            value={symbols.Ni}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
+       
         <label>
           Zn
           <input

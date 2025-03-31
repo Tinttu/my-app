@@ -60,6 +60,7 @@ function Asking() {
   
     if (correct) {
       alert("Kaikki vastaukset ovat oikein!");
+
     } else {
       alert(message);
     }

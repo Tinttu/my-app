@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Asking2 from "./assets/Asking2"
 import Asking from "./assets/Asking"
 //import Random-asking from "./assets/Random-asking"
 
@@ -10,8 +11,8 @@ function App() {
     <>
 
       <div>
-        
-        <Asking /> {/* Käytä Asking-komponenttia tässä */}
+        <Asking /> 
+        {/*<Asking2 /> {/* Käytä Asking-komponenttia tässä */}
       </div>
     </>
   )
