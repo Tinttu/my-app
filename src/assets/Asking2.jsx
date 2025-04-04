@@ -59,7 +59,7 @@ function Asking2() {
 
   return (
     <div>
-      <h1>Kemialliset merkit</h1>
+      <h1>Kemialliset merkit 2</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Br
@@ -68,6 +68,7 @@ function Asking2() {
             name="Br"
             value={symbols.Br}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -80,6 +81,7 @@ function Asking2() {
             name="Zn"
             value={symbols.Zn}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -91,6 +93,7 @@ function Asking2() {
             name="Pb"
             value={symbols.Pb}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -102,6 +105,7 @@ function Asking2() {
             name="Cl"
             value={symbols.Cl}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -113,6 +117,7 @@ function Asking2() {
             name="Fe"
             value={symbols.Fe}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -124,6 +129,7 @@ function Asking2() {
             name="K"
             value={symbols.K}
             style={{ marginLeft: "15px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -135,6 +141,7 @@ function Asking2() {
             name="Hg"
             value={symbols.Hg}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -146,6 +153,7 @@ function Asking2() {
             name="F"
             value={symbols.F}
             style={{ marginLeft: "15px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -157,6 +165,7 @@ function Asking2() {
             name="P"
             value={symbols.P}
             style={{ marginLeft: "15px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
@@ -168,6 +177,7 @@ function Asking2() {
             name="Ge"
             value={symbols.Ge}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
