@@ -1,36 +1,31 @@
 import React, { useState } from 'react';
 import './Asking.css'
+//import { useNavigate } from 'react-router-dom'; // Import useNavigate
+//import Asking2 from './Asking3';
 
 function Asking3() {
   const [symbols, setSymbols] = useState({
-    O: '',
-    H: '',
-    C: '',
-    N: '',
-    Ne: '',
-    Al: '',
-    Cu: '',
-    Ag: '',
-    Au: '',
-    Ni: ''
+    Br: '',
+    Zn: '',
+    Pb: '',
+    Cl: '',
+    Fe: '',
+    K: ''
   });
 
+//const navigate = useNavigate(); // Initialize navigation
+
   const correctSymbols = {
-    O: "happi",
-    H: "vety",
-    C: "hiili",
-    N: "typpi",
-    Ne: "neon",
-    Al: "alumiini",
-    Cu: "kupari",
-    Ag: "hopea",
-    Au: "kulta",
-    Ni: "nikkeli",
+    Br: "bromi",
     Zn: "sinkki",
     Pb: "lyijy",
     Cl: "kloori",
     Fe: "rauta",
-    K: "kalium"
+    K: "kalium",
+    Hg: "elohopea",
+    P: "fosfori",
+    F: "fluori",
+    Ge: "germanium"
   };
   
   const handleChange = (e) => {
@@ -60,7 +55,7 @@ function Asking3() {
   
     if (correct) {
       alert("Kaikki vastaukset ovat oikein!");
-
+      //navigate("/asking3"); // Navigate to Asking3
     } else {
       alert(message);
     }
@@ -69,62 +64,27 @@ function Asking3() {
 
   return (
     <div>
-      <h1>Kemialliset merkit</h1>
+      <h1>Kemialliset merkit 3</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          O
+          Br
           <input
             type="text"
-            name="O"
-            value={symbols.O}
-            style={{ marginLeft: "20px" }}
+            name="Br"
+            value={symbols.Br}
+            style={{ marginLeft: "10px" }}
             autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
+       
         <label>
-          H
+          Zn
           <input
             type="text"
-            name="H"
-            value={symbols.H}
-            style={{ marginLeft: "20px" }}
-            autocomplete="off"
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          C
-          <input
-            type="text"
-            name="C"
-            value={symbols.C}
-            style={{ marginLeft: "20px" }}
-            autocomplete="off"
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          N
-          <input
-            type="text"
-            name="N"
-            value={symbols.N}
-            style={{ marginLeft: "20px" }}
-            autocomplete="off"
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Ne
-          <input
-            type="text"
-            name="Ne"
-            value={symbols.Ne}
+            name="Zn"
+            value={symbols.Zn}
             style={{ marginLeft: "10px" }}
             autocomplete="off"
             onChange={handleChange}
@@ -132,11 +92,11 @@ function Asking3() {
         </label>
         <br />
         <label>
-          Al
+          Pb
           <input
             type="text"
-            name="Al"
-            value={symbols.Al}
+            name="Pb"
+            value={symbols.Pb}
             style={{ marginLeft: "10px" }}
             autocomplete="off"
             onChange={handleChange}
@@ -144,11 +104,11 @@ function Asking3() {
         </label>
         <br />
         <label>
-          Cu
+          Cl
           <input
             type="text"
-            name="Cu"
-            value={symbols.Cu}
+            name="Cl"
+            value={symbols.Cl}
             style={{ marginLeft: "10px" }}
             autocomplete="off"
             onChange={handleChange}
@@ -156,11 +116,11 @@ function Asking3() {
         </label>
         <br />
         <label>
-          Ag
+          Fe
           <input
             type="text"
-            name="Ag"
-            value={symbols.Ag}
+            name="Fe"
+            value={symbols.Fe}
             style={{ marginLeft: "10px" }}
             autocomplete="off"
             onChange={handleChange}
@@ -168,11 +128,23 @@ function Asking3() {
         </label>
         <br />
         <label>
-          Au
+          K
           <input
             type="text"
-            name="Au"
-            value={symbols.Au}
+            name="K"
+            value={symbols.K}
+            style={{ marginLeft: "15px" }}
+            autocomplete="off"
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Hg
+          <input
+            type="text"
+            name="Hg"
+            value={symbols.Hg}
             style={{ marginLeft: "10px" }}
             autocomplete="off"
             onChange={handleChange}
@@ -180,19 +152,43 @@ function Asking3() {
         </label>
         <br />
         <label>
-          Ni
+          F
           <input
             type="text"
-            name="Ni"
-            value={symbols.Ni}
+            name="F"
+            value={symbols.F}
+            style={{ marginLeft: "15px" }}
+            autocomplete="off"
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          P
+          <input
+            type="text"
+            name="P"
+            value={symbols.P}
+            style={{ marginLeft: "15px" }}
+            autocomplete="off"
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Ge
+          <input
+            type="text"
+            name="Ge"
+            value={symbols.Ge}
             style={{ marginLeft: "10px" }}
             autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
-        
         <br />
+
         
         <p>
         <button type="submit">Lähetä</button>

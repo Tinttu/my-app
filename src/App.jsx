@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Tu
 import './App.css';
 import Asking from './assets/Asking';
 import Asking2 from './assets/Asking2';
+import Asking3 from './assets/Asking3';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
 
           {/* Reitti Asking2-komponentille */}
           <Route path="/asking2" element={<Asking2 />} />
+
+          {/* Reitti Asking3-komponentille */}
+          <Route path="/asking3" element={<Asking3 />} />
         </Routes>
       </div>
     </Router>

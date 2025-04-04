@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Asking.css'
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import Asking2 from './Asking2';
+//import Asking2 from './Asking2';
 
 function Asking() {
   const [symbols, setSymbols] = useState({

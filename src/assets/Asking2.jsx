@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Asking.css'
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+//import Asking3 from './Asking3';
 
 function Asking2() {
   const [symbols, setSymbols] = useState({
@@ -8,8 +10,14 @@ function Asking2() {
     Pb: '',
     Cl: '',
     Fe: '',
-    K: ''
+    K: '',
+    Hg: '',
+    P: '',
+    F: '',
+    Ge: ''
   });
+
+const navigate = useNavigate(); // Initialize navigation
 
   const correctSymbols = {
     Br: "bromi",
@@ -51,6 +59,7 @@ function Asking2() {
   
     if (correct) {
       alert("Kaikki vastaukset ovat oikein!");
+      navigate("/asking3"); // Navigate to Asking3
     } else {
       alert(message);
     }
