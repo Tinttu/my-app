@@ -1,21 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import Asking2 from "./assets/Asking2"
-import Asking from "./assets/Asking"
-//import Random-asking from "./assets/Random-asking"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Tuodaan Router-komponentit
+import './App.css';
+import Asking from './assets/Asking';
+import Asking2 from './assets/Asking2';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-
+    <Router>
       <div>
-        <Asking /> 
-        {/*<Asking2 /> {/* Käytä Asking-komponenttia tässä */}
+        <Routes>
+          {/* Perusreitti, joka näyttää Asking-komponentin */}
+          <Route path="/" element={<Asking />} />
+
+          {/* Reitti Asking2-komponentille */}
+          <Route path="/asking2" element={<Asking2 />} />
+        </Routes>
       </div>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
