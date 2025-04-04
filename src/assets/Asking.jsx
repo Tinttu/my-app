@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Asking.css'
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import Asking2 from './Asking2';
 
 function Asking() {
   const [symbols, setSymbols] = useState({
@@ -15,6 +17,8 @@ function Asking() {
     Ni: ''
   });
 
+  //const navigate = useNavigate(); // Initialize navigation
+
   const correctSymbols = {
     O: "happi",
     H: "vety",
@@ -25,13 +29,8 @@ function Asking() {
     Cu: "kupari",
     Ag: "hopea",
     Au: "kulta",
-    Ni: "nikkeli",
-    Zn: "sinkki",
-    Pb: "lyijy",
-    Cl: "kloori",
-    Fe: "rauta",
-    K: "kalium"
-  };
+    Ni: "nikkeli"
+      };
   
   const handleChange = (e) => {
     const { name, value } = e.target;

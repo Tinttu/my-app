@@ -1,27 +1,36 @@
 import React, { useState } from 'react';
 import './Asking.css'
 
-function Asking2() {
+function Asking3() {
   const [symbols, setSymbols] = useState({
-    Br: '',
-    Zn: '',
-    Pb: '',
-    Cl: '',
-    Fe: '',
-    K: ''
+    O: '',
+    H: '',
+    C: '',
+    N: '',
+    Ne: '',
+    Al: '',
+    Cu: '',
+    Ag: '',
+    Au: '',
+    Ni: ''
   });
 
   const correctSymbols = {
-    Br: "bromi",
+    O: "happi",
+    H: "vety",
+    C: "hiili",
+    N: "typpi",
+    Ne: "neon",
+    Al: "alumiini",
+    Cu: "kupari",
+    Ag: "hopea",
+    Au: "kulta",
+    Ni: "nikkeli",
     Zn: "sinkki",
     Pb: "lyijy",
     Cl: "kloori",
     Fe: "rauta",
-    K: "kalium",
-    Hg: "elohopea",
-    P: "fosfori",
-    F: "fluori",
-    Ge: "germanium"
+    K: "kalium"
   };
   
   const handleChange = (e) => {
@@ -51,6 +60,7 @@ function Asking2() {
   
     if (correct) {
       alert("Kaikki vastaukset ovat oikein!");
+
     } else {
       alert(message);
     }
@@ -62,118 +72,127 @@ function Asking2() {
       <h1>Kemialliset merkit</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Br
+          O
           <input
             type="text"
-            name="Br"
-            value={symbols.Br}
+            name="O"
+            value={symbols.O}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          H
+          <input
+            type="text"
+            name="H"
+            value={symbols.H}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          C
+          <input
+            type="text"
+            name="C"
+            value={symbols.C}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          N
+          <input
+            type="text"
+            name="N"
+            value={symbols.N}
+            style={{ marginLeft: "20px" }}
+            autocomplete="off"
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Ne
+          <input
+            type="text"
+            name="Ne"
+            value={symbols.Ne}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
-       
         <label>
-          Zn
+          Al
           <input
             type="text"
-            name="Zn"
-            value={symbols.Zn}
+            name="Al"
+            value={symbols.Al}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
         <label>
-          Pb
+          Cu
           <input
             type="text"
-            name="Pb"
-            value={symbols.Pb}
+            name="Cu"
+            value={symbols.Cu}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
         <label>
-          Cl
+          Ag
           <input
             type="text"
-            name="Cl"
-            value={symbols.Cl}
+            name="Ag"
+            value={symbols.Ag}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
         <label>
-          Fe
+          Au
           <input
             type="text"
-            name="Fe"
-            value={symbols.Fe}
+            name="Au"
+            value={symbols.Au}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
         <label>
-          K
+          Ni
           <input
             type="text"
-            name="K"
-            value={symbols.K}
-            style={{ marginLeft: "15px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Hg
-          <input
-            type="text"
-            name="Hg"
-            value={symbols.Hg}
+            name="Ni"
+            value={symbols.Ni}
             style={{ marginLeft: "10px" }}
+            autocomplete="off"
             onChange={handleChange}
           />
         </label>
         <br />
-        <label>
-          F
-          <input
-            type="text"
-            name="F"
-            value={symbols.F}
-            style={{ marginLeft: "15px" }}
-            onChange={handleChange}
-          />
-        </label>
+        
         <br />
-        <label>
-          P
-          <input
-            type="text"
-            name="P"
-            value={symbols.P}
-            style={{ marginLeft: "15px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Ge
-          <input
-            type="text"
-            name="Ge"
-            value={symbols.Ge}
-            style={{ marginLeft: "10px" }}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <br />
-
         
         <p>
         <button type="submit">Lähetä</button>
@@ -185,4 +204,4 @@ function Asking2() {
 
 
 
-export default Asking2;
+export default Asking3;
