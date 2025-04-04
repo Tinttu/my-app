@@ -40,18 +40,19 @@ function RandomAsking() {
     let resultMessage = "Tarkistusraportti:\n";
 
     questions.forEach((item) => {
-      if (answers[item.symbol]?.toLowerCase() === item.name.toLowerCase()) {
-        resultMessage += `${item.symbol}: Oikein!\n`;
+      if (answers[item.name]?.toLowerCase() === item.symbol.toLowerCase()) {
+        // Vertaillaan käyttäjän vastausta (symbol) oikeaan symboliin
+        resultMessage += `${item.name}: Oikein!\n`;
       } else {
-        resultMessage += `${item.symbol}: Väärin. Oikea vastaus on ${item.name}.\n`;
+        resultMessage += `${item.name}: Väärin. Oikea vastaus on ${item.symbol}.\n`;
         isCorrect = false;
       }
     });
 
     if (isCorrect) {
-      setMessage("Kaikki vastaukset ovat oikein!");
+      alert("Kaikki vastaukset ovat oikein!");
     } else {
-      setMessage(resultMessage);
+      alert(resultMessage);
     }
   };
 
@@ -62,22 +63,24 @@ function RandomAsking() {
 
   return (
     <div>
-      <h1>Kemiallisten aineiden kysely</h1>
+      <h1>Symbolit alkuaineisiin</h1>
       <form onSubmit={handleSubmit}>
         {questions.map((item) => (
-          <label key={item.symbol}>
-            {item.name} {/* Näytetään aineen nimi */}
+          <label key={item.name}>
+            {item.name} {/* Näytetään aineen nimi kysymyksenä */}
             <input
               type="text"
-              name={item.symbol}
-              value={answers[item.symbol] || ""}
+              
+              name={item.name} // Käyttäjän vastaus tallennetaan aineen nimellä
+              value={answers[item.name] || ""}
               autoComplete="off"
-              style={{ marginLeft: "20px" }}
+              style={{ padding: "0", marginLeft: "10px" , width: "40px" , textAlign: "center"}}
               onChange={handleChange}
             />
             <br />
           </label>
         ))}
+        <br />
         <button type="submit">Lähetä</button>
       </form>
       {message && <p>{message}</p>}
