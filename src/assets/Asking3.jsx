@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Asking.css'
-//import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 //import Asking2 from './Asking3';
 
 function Asking3() {
@@ -18,7 +18,7 @@ function Asking3() {
     
   });
 
-//const navigate = useNavigate(); // Initialize navigation
+const navigate = useNavigate(); // Initialize navigation
 
   const correctSymbols = {
     He: "helium",
@@ -60,7 +60,7 @@ function Asking3() {
   
     if (correct) {
       alert("Kaikki vastaukset ovat oikein!");
-      //navigate("/asking3"); // Navigate to Asking3
+      navigate("/randomAsking"); // Navigate to RandomAsking
     } else {
       alert(message);
     }
@@ -90,7 +90,7 @@ function Asking3() {
             type="text"
             name="I"
             value={symbols.I}
-            style={{ marginLeft: "18px" }}
+            style={{ marginLeft: "22px" }}
             autocomplete="off"
             onChange={handleChange}
           />
