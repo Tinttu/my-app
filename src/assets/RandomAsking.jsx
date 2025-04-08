@@ -41,7 +41,7 @@ function RandomAsking() {
     let resultMessage = "Tarkistusraportti:\n";
 
     questions.forEach((item) => {
-      if (answers[item.name]?.toLowerCase() === item.symbol.toLowerCase()) {
+      if (answers[item.name] === item.symbol) {
         // Vertaillaan käyttäjän vastausta (symbol) oikeaan symboliin
         resultMessage += `${item.name}: Oikein!\n`;
       } else {
