@@ -90,7 +90,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="I"
             value={symbols.I}
-            style={{ marginLeft: "22px" }}
+            style={{ marginLeft: "29px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -102,7 +102,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Ca"
             value={symbols.Ca}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "15px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -126,7 +126,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Na"
             value={symbols.Na}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "15px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -138,7 +138,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Si"
             value={symbols.Si}
-            style={{ marginLeft: "15px" }}
+            style={{ marginLeft: "22px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -150,7 +150,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="U"
             value={symbols.U}
-            style={{ marginLeft: "18px" }}
+            style={{ marginLeft: "25px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -162,7 +162,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Sn"
             value={symbols.Sn}
-            style={{ marginLeft: "15px" }}
+            style={{ marginLeft: "18px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -174,7 +174,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="S"
             value={symbols.S}
-            style={{ marginLeft: "18px" }}
+            style={{ marginLeft: "25px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -186,7 +186,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Rn"
             value={symbols.Rn}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "15px" }}
             autocomplete="off"
             onChange={handleChange}
           />

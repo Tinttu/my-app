@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css';
 
 function RandomAsking() {
   const [questions, setQuestions] = useState([]);
@@ -62,15 +63,16 @@ function RandomAsking() {
   }, []);
 
   return (
-    <div>
+    <div >
       <h1>Symbolit alkuaineisiin</h1>
       <form onSubmit={handleSubmit}>
         {questions.map((item) => (
-          <label key={item.name}>
+          <div  className="row">
+          <label key={item.name} className="label">
             {item.name} {/* Näytetään aineen nimi kysymyksenä */}
             <input
               type="text"
-              
+              className="input"
               name={item.name} // Käyttäjän vastaus tallennetaan aineen nimellä
               value={answers[item.name] || ""}
               autoComplete="off"
@@ -79,6 +81,7 @@ function RandomAsking() {
             />
             <br />
           </label>
+          </div>
         ))}
         <br />
         <button type="submit">Lähetä</button>

@@ -113,7 +113,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Cl"
             value={symbols.Cl}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "14px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -125,7 +125,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Fe"
             value={symbols.Fe}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "14px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -137,7 +137,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="K"
             value={symbols.K}
-            style={{ marginLeft: "15px" }}
+            style={{ marginLeft: "20px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -161,7 +161,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="F"
             value={symbols.F}
-            style={{ marginLeft: "15px" }}
+            style={{ marginLeft: "24px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -173,7 +173,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="P"
             value={symbols.P}
-            style={{ marginLeft: "15px" }}
+            style={{ marginLeft: "24px" }}
             autocomplete="off"
             onChange={handleChange}
           />
@@ -185,7 +185,7 @@ const navigate = useNavigate(); // Initialize navigation
             type="text"
             name="Ge"
             value={symbols.Ge}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "14px" }}
             autocomplete="off"
             onChange={handleChange}
           />
