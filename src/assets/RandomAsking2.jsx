@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import '../App.css';
 
-function RandomAsking() {
+function RandomAsking2() {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [message, setMessage] = useState("");
 
   // Tietokanta kemiallisista merkeistä ja aineista
   const symbolsData = [
-    { symbol: "O", name: "happi" },
-    { symbol: "H", name: "vety" },
-    { symbol: "C", name: "hiili" },
-    { symbol: "N", name: "typpi" },
-    { symbol: "Ne", name: "neon" },
-    { symbol: "Al", name: "alumiini" },
-    { symbol: "Cu", name: "kupari" },
-    { symbol: "Ag", name: "hopea" },
-    { symbol: "Au", name: "kulta" },
-    { symbol: "Ni", name: "nikkeli" }
+    { symbol: "He", name: "helium" },
+    { symbol: "U", name: "uraani" },
+    { symbol: "Zn", name: "sinkki" },
+    { symbol: "Sn", name: "tina" },
+    { symbol: "Rn", name: "radon" },
+    { symbol: "I", name: "jodi" },
+    { symbol: "Mg", name: "magnesium" },
+    { symbol: "Fe", name: "rauta" },
+    { symbol: "Cl", name: "kloori" },
+    { symbol: "K", name: "kalium" }
   ];
 
   // Shuffle-funktio satunnaistaa kysymysten järjestyksen
@@ -64,7 +64,7 @@ function RandomAsking() {
 
   return (
     <div >
-      <h1>Merkit alkuaineisiin</h1>
+      <h1>Merkit alkuaineisiin 2</h1>
       <form onSubmit={handleSubmit}>
         {questions.map((item) => (
           <div  className="row">
@@ -91,4 +91,4 @@ function RandomAsking() {
   );
 }
 
-export default RandomAsking;
+export default RandomAsking2;
