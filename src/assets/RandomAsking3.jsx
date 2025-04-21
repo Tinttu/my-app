@@ -53,7 +53,8 @@ function RandomAsking3() {
     });
 
     if (isCorrect) {
-      alert("Kaikki vastaukset ovat oikein!\nPääset kertaamaan vaikeimpia alkuaineita.");
+      alert("Kaikki vastaukset ovat oikein!\nVoit tehdä harjoituskierroksen uudelleen.");
+      navigate("/");
     } else {
       alert(resultMessage);
     }
