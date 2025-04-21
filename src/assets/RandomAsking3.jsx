@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
 
-function RandomAsking2() {
+function RandomAsking3() {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [message, setMessage] = useState("");
@@ -10,16 +10,16 @@ function RandomAsking2() {
   
   // Tietokanta kemiallisista merkeistä ja aineista
   const symbolsData = [
-    { symbol: "He", name: "helium" },
-    { symbol: "U", name: "uraani" },
-    { symbol: "Zn", name: "sinkki" },
-    { symbol: "Sn", name: "tina" },
-    { symbol: "Rn", name: "radon" },
-    { symbol: "I", name: "jodi" },
-    { symbol: "Mg", name: "magnesium" },
-    { symbol: "Fe", name: "rauta" },
-    { symbol: "Cl", name: "kloori" },
-    { symbol: "K", name: "kalium" }
+    { symbol: "Ca", name: "kalsium" },
+    { symbol: "Br", name: "bromi" },
+    { symbol: "Pb", name: "lyijy" },
+    { symbol: "Ge", name: "germanium" },
+    { symbol: "Hg", name: "elohopea" },
+    { symbol: "F", name: "fluori" },
+    { symbol: "P", name: "fosfori" },
+    { symbol: "S", name: "rikki" },
+    { symbol: "Si", name: "pii" },
+    { symbol: "Na", name: "natrium" }
   ];
 
   // Shuffle-funktio satunnaistaa kysymysten järjestyksen
@@ -53,8 +53,7 @@ function RandomAsking2() {
     });
 
     if (isCorrect) {
-      alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Merkit alkuaineisiin3!");
-      navigate("/randomAsking3");
+      alert("Kaikki vastaukset ovat oikein!\nPääset kertaamaan vaikeimpia alkuaineita.");
     } else {
       alert(resultMessage);
     }
@@ -67,7 +66,7 @@ function RandomAsking2() {
 
   return (
     <div >
-      <h1>Merkit alkuaineisiin 2</h1>
+      <h1>Merkit alkuaineisiin 3</h1>
       <form onSubmit={handleSubmit}>
         {questions.map((item) => (
           <div  className="row">
@@ -94,4 +93,4 @@ function RandomAsking2() {
   );
 }
 
-export default RandomAsking2;
+export default RandomAsking3;

@@ -5,6 +5,7 @@ import Asking2 from './assets/Asking2';
 import Asking3 from './assets/Asking3';
 import RandomAsking from './assets/RandomAsking';
 import RandomAsking2 from './assets/RandomAsking2';
+import RandomAsking3 from './assets/RandomAsking3';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
 
           {/* Reitti RandomAsking2-komponentille */}
           <Route path="/randomAsking2" element={<RandomAsking2 />} />
+
+          {/* Reitti RandomAsking3-komponentille */}
+          <Route path="/randomAsking3" element={<RandomAsking3 />} />
       </Routes>
       
     </Router>
