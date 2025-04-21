@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import '../App.css';
+import { useNavigate } from 'react-router-dom';
 
 function RandomAsking() {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [message, setMessage] = useState("");
+  const navigate = useNavigate(); // Alustetaan navigointifunktio
 
   // Tietokanta kemiallisista merkeistä ja aineista
   const symbolsData = [
@@ -50,8 +52,12 @@ function RandomAsking() {
       }
     });
 
+    
+
     if (isCorrect) {
-      alert("Kaikki vastaukset ovat oikein!");
+      
+      alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Merkit alkuaineisiin2!");
+      navigate("/randomAsking2");
     } else {
       alert(resultMessage);
     }
