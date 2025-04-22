@@ -69,5 +69,21 @@ label {
   }
   button {
     background-color: #abcded;
-  }
+    border: 1px solid #89a2bb; /* Tumma reunus */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #678999, inset -3px -3px 5px #ffffff; /* Ulkoinen varjo + sisäinen kohokuvio */
+  transition: all 0.2s ease-in-out;
+}
+
+button:active {
+  box-shadow: inset 3px 3px 5px #678999, inset -3px -3px 5px #ffffff; /* Lisää kohokuvio kun painike painetaan */
+} 
+}
+
+button:hover {
+  background-color: #89a2bb; /* Muuttaa taustavärin */
+  box-shadow: 5px 5px 8px #456677, inset -3px -3px 5px #ffffff; /* Korostaa varjoa */
+  transform: scale(1.05); /* Kasvattaa hieman kokoa */
 }
