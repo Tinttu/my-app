@@ -68,8 +68,8 @@ label {
     color: #747bff;
   }
   button {
-    background-color: #abcded;
-    border: 1px solid #89a2bb; /* Tumma reunus */
+    background-color: #7da6de ;
+    border: 1px solid #163c4f; /* Tumma reunus */
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -78,7 +78,7 @@ label {
 }
 
 button:active {
-  box-shadow: inset 3px 3px 5px #678999, inset -3px -3px 5px #ffffff; /* Lisää kohokuvio kun painike painetaan */
+  box-shadow: inset 3px 3px 5px #0a3041, inset -3px -3px 5px #ffffff; /* Lisää kohokuvio kun painike painetaan */
 } 
 }
 
