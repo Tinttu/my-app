@@ -1,17 +1,17 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// Tuodaan Firebase-sovelluksen alustusfunktio
+import { initializeApp } from 'firebase/app'
 
+// Määritellään sovelluksen Firebase-asetukset
 const firebaseConfig = {
-  apiKey: "AIzaSyDGaXPJhxaswEz81D8a-CtNgddZyjFORkQ",
-  authDomain: "kemialliset-merkit.firebaseapp.com",
-  projectId: "kemialliset-merkit",
-  storageBucket: "kemialliset-merkit.firebasestorage.app",
-  messagingSenderId: "346744178769",
-  appId: "1:346744178769:web:1f87d9507ec94898a3d070",
-  measurementId: "G-ZDVJ2JFC1R"
-};
+  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECTID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_FIREBASE_APPID
+}
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// Alustetaan Firebase-sovellus
+const firebase = initializeApp(firebaseConfig)
 
-export { app, analytics };
+export default firebase
