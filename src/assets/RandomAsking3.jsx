@@ -53,8 +53,8 @@ function RandomAsking3() {
     });
 
     if (isCorrect) {
-      alert("Kaikki vastaukset ovat oikein!\nVoit tehdä harjoituskierroksen uudelleen.");
-      navigate("/");
+      alert("Kaikki vastaukset ovat oikein!");
+      navigate("/endpage");
     } else {
       alert(resultMessage);
     }
