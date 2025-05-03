@@ -53,7 +53,7 @@ function RandomAsking2() {
     });
 
     if (isCorrect) {
-      alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Merkit alkuaineisiin3!");
+      //alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Merkit alkuaineisiin3!");
       navigate("/randomAsking3");
     } else {
       alert(resultMessage);
@@ -70,7 +70,7 @@ function RandomAsking2() {
       <h1>Merkit alkuaineisiin 2</h1>
       <form onSubmit={handleSubmit}>
         {questions.map((item) => (
-          <div  className="row">
+          <div  className="row" style={{ textAlign: "left", paddingLeft: "0px" }}>
           <label key={item.name} className="label">
             {item.name} {/* Näytetään aineen nimi kysymyksenä */}
             <input

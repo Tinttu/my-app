@@ -53,7 +53,7 @@ function RandomAsking3() {
     });
 
     if (isCorrect) {
-      alert("Kaikki vastaukset ovat oikein!");
+      //alert("Kaikki vastaukset ovat oikein!");
       navigate("/endpage");
     } else {
       alert(resultMessage);
@@ -70,7 +70,7 @@ function RandomAsking3() {
       <h1>Merkit alkuaineisiin 3</h1>
       <form onSubmit={handleSubmit}>
         {questions.map((item) => (
-          <div  className="row">
+          <div  className="row" style={{ textAlign: "left", paddingLeft: "0px" }}>
           <label key={item.name} className="label">
             {item.name} {/* Näytetään aineen nimi kysymyksenä */}
             <input

@@ -60,7 +60,7 @@ const navigate = useNavigate(); // Initialize navigation
   
     if (correct) {
       
-      alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Merkit alkuaineisiin!");
+      //alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Merkit alkuaineisiin!");
 
       navigate("/randomAsking"); // Navigate to RandomAsking
     } else {

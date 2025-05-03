@@ -59,8 +59,7 @@ const navigate = useNavigate(); // Initialize navigation
   
     if (correct) {
       
-      alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Kemialliset merkit 3!");
-
+      //alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Kemialliset merkit 3!");
       navigate("/asking3"); // Navigate to Asking3
     } else {
       alert(message);

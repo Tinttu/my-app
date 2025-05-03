@@ -58,7 +58,7 @@ function Asking() {
     });
   
     if (correct) {
-      alert("Kaikki vastaukset ovat oikein!\nPääset sivulle: Kemialliset merkit 2!");
+      //window.confirm("Kaikki vastaukset ovat oikein!");
       navigate("/asking2"); // Navigate to Asking2
     } else {
       alert(message);
